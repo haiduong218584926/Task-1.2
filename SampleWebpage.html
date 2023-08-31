@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Example Website for Responsive Design</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: 1px solid gray;
+                padding: 10px;
+                text-align:center;
+            }
+
+            body {
+                font-size: 3vw;
+            }
+            @media (max-width:300px) {
+                th, td {
+                    display:block;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            This is demonstration of responsive design:
+        </h1>
+        <img src="https://as1.ftcdn.net/v2/jpg/05/68/52/38/1000_F_568523814_e10EvETwizUqX74fDJsE0FJ2GolnOKsk.jpg" style="max-width:100%;">
+        <table>
+            <tr>
+                <th>Time Period</th>
+                <th>Events</th>
+            </tr>
+            <tr class="morning">
+                <td>Morning</td>
+                <td>Event 1<br>Event 2</td>
+            </tr>
+            <tr class="afternoon">
+                <td>Afternoon</td>
+                <td>Event 3<br>Event 4<br>Event 5</td>
+            </tr>
+            <tr class="evening">
+                <td>Evening</td>
+                <td>Event 6<br>Event 7<br>Event 8<br>Event 9</td>
+            </tr>
+        </table>
+        <p>
+        <form>
+            <caption>SIGN UP NOW!</caption><br />
+            <label>Name: </label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label>Contact Number: </label><br />
+            <input type="number"><br />
+            <label>Email: </label><br />
+            <input type="email"><br />
+            <label>Interested Practice:</label><br />
+            <input type="checkbox" id="Metta" name="Metta" value="Metta-Kindness Meditation"/>
+            <label>Metta-Kindness Meditation</label>
+            <input type="checkbox" id="Dual" name="Dual" value="Dual Meditation"/>
+            <label>Dual Meditation</label>
+            <input type="checkbox" id="Non-Dual" name="Non-Dual" value="Non-Dual Meditation"/>
+            <label>Non-Dual Meditation</label>
+            <input type="checkbox" id="Koan" name="Koan" value="Koan Meditation"/>
+            <label>Koan Meditation</label><br />
+            <input type="submit" value="Send"/>
+
+        </form>
+        </p>
+    </body>
+</html>
