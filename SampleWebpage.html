@@ -33,20 +33,74 @@
         <img src="https://as1.ftcdn.net/v2/jpg/05/68/52/38/1000_F_568523814_e10EvETwizUqX74fDJsE0FJ2GolnOKsk.jpg" style="max-width:100%;">
         <table>
             <tr>
-                <th>Time Period</th>
-                <th>Events</th>
+                <th>JS Concepts</th>
+                <th>Results</th>
             </tr>
-            <tr class="morning">
-                <td>Morning</td>
-                <td>Event 1<br>Event 2</td>
+            <tr>
+                <td>String</td>
+                <td>
+                    <script>
+                        const str = "I am Hai Duong";
+                        document.write("Length of the sentence: " + str.length + "<br>");
+                        document.write("Turn all to Uppercase: " + str.toUpperCase() + "<br>");
+                        document.write("Substring to isolate my name: " + str.substring(5, 14) + "<br>");
+                        document.write("Index of my first name: " + str.indexOf("Hai") + "<br>");
+                        document.write("Slice string up to my family name: " + str.slice(9));
+                    </script>
+                </td>
             </tr>
-            <tr class="afternoon">
-                <td>Afternoon</td>
-                <td>Event 3<br>Event 4<br>Event 5</td>
+            <tr>
+                <td>Number</td>
+                <td>
+                    <script>
+                        document.write("Fixed pi to 2 decimal places: " + 3.1415.toFixed(2) + "<br>");
+                        document.write("Rounded to nearest integer number 3.14: " + Math.round(3.14) + "<br>");
+                        document.write("Maximum of 1 and 999: " + Math.max(1, 999) + "<br>");
+                        document.write("Random number between my month of birth and date of birth (November 24) using Math.floor() and Math.random(): " + Math.floor(Math.random()*24-11+1)+1);
+                    </script>
+                </td>
             </tr>
-            <tr class="evening">
-                <td>Evening</td>
-                <td>Event 6<br>Event 7<br>Event 8<br>Event 9</td>
+            <tr>
+                <td>Array</td>
+                <td>
+                    <script>
+                        const arr = [1, 2, 3, "four", "five"];
+                        document.write("Example array: " + arr + "<br>")
+                        document.write("Length of array: " + arr.length + "<br>");
+                        document.write("Concatenate 2 more elements: " + arr.concat([6, 7]) + "<br>");
+                        document.write("Joined as string: " + arr.join(", ") + "<br>");
+                        document.write("Reversed array: " + arr.reverse() + "<br>");
+                        document.write("Index of number 3: " + arr.indexOf("four"));
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>
+                    <script>
+                        const now = new Date();
+                        document.write("Current date and time: " + now + "<br>");
+                        document.write("Year: " + now.getFullYear() + "<br>");
+                        document.write("Month: " + now.getMonth() + "<br>");
+                        document.write("Day of the week: " + now.getDay() + "<br>");
+                        document.write("Hours: " + now.getHours());
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>Function</td>
+                <td>
+                    <script>
+                        function greetTheDeveloper(name) {
+                            document.write("Hello! Thank you for programming me using html/css/js! Mr." + name + "<br>");
+                        }
+                        function multiplyTwoNumber(a, b) {
+                            return a * b;
+                        }
+                        greetTheDeveloper("Hai");
+                        document.write("Product: " + multiplyTwoNumber(24, 11));
+                    </script>
+                </td>
             </tr>
         </table>
         <p>
